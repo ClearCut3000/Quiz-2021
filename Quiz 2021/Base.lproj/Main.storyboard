@@ -247,19 +247,50 @@
             </objects>
             <point key="canvasLocation" x="1810.144927536232" y="57.589285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="BWP-q8-YPY">
             <objects>
-                <viewController id="bEs-Zz-FWT" sceneMemberID="viewController">
+                <viewController id="bEs-Zz-FWT" customClass="ResultsViewController" customModule="Quiz_2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lk-iS-Zup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="eBw-HD-6td">
+                                <rect key="frame" x="20" y="360" width="374" height="122"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH2-fZ-Y6B">
+                                        <rect key="frame" x="128.5" y="0.0" width="117" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ4-b2-DVn">
+                                        <rect key="frame" x="157.5" y="92" width="59" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nha-Rk-La0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eBw-HD-6td" firstAttribute="leading" secondItem="nha-Rk-La0" secondAttribute="leading" constant="20" id="KMG-3L-GXW"/>
+                            <constraint firstItem="eBw-HD-6td" firstAttribute="centerY" secondItem="8lk-iS-Zup" secondAttribute="centerY" id="SRs-8A-hGW"/>
+                            <constraint firstItem="nha-Rk-La0" firstAttribute="trailing" secondItem="eBw-HD-6td" secondAttribute="trailing" constant="20" id="TNy-en-58K"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="69d-R4-YpQ"/>
+                    <navigationItem key="navigationItem" id="69d-R4-YpQ">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="SYw-wK-w40">
+                            <connections>
+                                <segue destination="SsO-dz-cMo" kind="unwind" unwindAction="unwind:" id="iLJ-i8-V5s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VG7-vK-S5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SsO-dz-cMo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="57.589285714285708"/>
         </scene>
