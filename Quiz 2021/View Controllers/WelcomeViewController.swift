@@ -14,7 +14,7 @@ class WelcomeViewController: UIViewController {
         
     }
     @IBAction func unwind (_ seque: UIStoryboardSegue){
-        print( #line< #function)
+        print( #line, #function)
     }
 
 }
