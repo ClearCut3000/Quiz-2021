@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360390CE26F32C5A00E3BE7F /* Screenshots in Resources */ = {isa = PBXBuildFile; fileRef = 360390CD26F32C5A00E3BE7F /* Screenshots */; };
 		364A28F626EBE6C90035C3B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A28F526EBE6C90035C3B9 /* AppDelegate.swift */; };
 		364A28F826EBE6C90035C3B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A28F726EBE6C90035C3B9 /* SceneDelegate.swift */; };
 		364A28FA26EBE6C90035C3B9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A28F926EBE6C90035C3B9 /* WelcomeViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360390CD26F32C5A00E3BE7F /* Screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screenshots; sourceTree = "<group>"; };
 		364A28F226EBE6C90035C3B9 /* Quiz 2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz 2021.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		364A28F526EBE6C90035C3B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364A28F726EBE6C90035C3B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		364A28F426EBE6C90035C3B9 /* Quiz 2021 */ = {
 			isa = PBXGroup;
 			children = (
+				360390CD26F32C5A00E3BE7F /* Screenshots */,
 				364A291026EE80B90035C3B9 /* App */,
 				364A290E26EE805D0035C3B9 /* Models */,
 				364A290F26EE80830035C3B9 /* View */,
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360390CE26F32C5A00E3BE7F /* Screenshots in Resources */,
 				364A290226EBE6D20035C3B9 /* LaunchScreen.storyboard in Resources */,
 				364A28FF26EBE6D20035C3B9 /* Assets.xcassets in Resources */,
 				364A28FD26EBE6C90035C3B9 /* Main.storyboard in Resources */,
